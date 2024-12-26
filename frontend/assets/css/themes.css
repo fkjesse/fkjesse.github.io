@@ -1,0 +1,92 @@
+/* 主题变量 */
+:root {
+    /* 默认主题 */
+    --theme-primary: var(--primary-blue);
+    --theme-secondary: var(--secondary-blue);
+    --theme-background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    --theme-text: var(--white);
+    --theme-card: rgba(255, 255, 255, 0.9);
+    --theme-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 喜庆主题 */
+.theme-festive {
+    --theme-primary: #FF4D4F;
+    --theme-secondary: #FFE7E7;
+    --theme-background: linear-gradient(135deg, #FF4D4F, #FFE7E7);
+    --theme-text: #FFFFFF;
+    --theme-card: rgba(255, 255, 255, 0.95);
+    --theme-shadow: 0 4px 6px rgba(255, 77, 79, 0.2);
+}
+
+/* 科技主题 */
+.theme-tech {
+    --theme-primary: #1890FF;
+    --theme-secondary: #E6F7FF;
+    --theme-background: linear-gradient(135deg, #1890FF, #E6F7FF);
+    --theme-text: #FFFFFF;
+    --theme-card: rgba(255, 255, 255, 0.85);
+    --theme-shadow: 0 4px 6px rgba(24, 144, 255, 0.2);
+}
+
+/* 简约主题 */
+.theme-simple {
+    --theme-primary: #333333;
+    --theme-secondary: #F5F5F5;
+    --theme-background: linear-gradient(135deg, #333333, #F5F5F5);
+    --theme-text: #FFFFFF;
+    --theme-card: rgba(255, 255, 255, 1);
+    --theme-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 应用主题样式 */
+body {
+    background: var(--theme-background);
+    color: var(--theme-text);
+}
+
+.prize-section,
+.info-section {
+    background: var(--theme-card);
+    box-shadow: var(--theme-shadow);
+}
+
+.primary-btn {
+    background: var(--theme-primary);
+}
+
+.secondary-btn {
+    color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+/* 动画效果 */
+@keyframes shine {
+    0% { background-position: -100% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.winner-display {
+    background: linear-gradient(
+        90deg,
+        var(--theme-card) 0%,
+        var(--theme-primary) 25%,
+        var(--theme-card) 50%,
+        var(--theme-primary) 75%,
+        var(--theme-card) 100%
+    );
+    background-size: 200% 100%;
+    animation: shine 2s linear infinite;
+}
+
+/* 响应式主题调整 */
+@media (max-width: 768px) {
+    :root {
+        --theme-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .prize-section,
+    .info-section {
+        background: var(--theme-card);
+    }
+} 
