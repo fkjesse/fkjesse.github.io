@@ -1,0 +1,108 @@
+:root {
+    --login-primary: #2C7EF8;
+    --login-bg: #F0F2F5;
+    --login-text: #333333;
+    --login-error: #FF4D4F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--login-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    color: var(--login-text);
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--login-text);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--login-primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(44, 126, 248, 0.2);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.form-error {
+    color: var(--login-error);
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--login-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.login-btn:hover {
+    background: #1a6fd4;
+}
+
+.login-btn:active {
+    background: #155bb0;
+} 

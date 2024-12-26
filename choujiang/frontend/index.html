@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024年会幸运抽奖</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/lottery.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部区域 -->
+        <header class="header">
+            <h1>2024年会幸运抽奖</h1>
+            <h2>激情飞扬 好运相伴</h2>
+            <div class="audio-control">
+                <button id="bgmControl">
+                    <span class="icon">🎵</span>
+                    <span class="text">背景音乐</span>
+                </button>
+            </div>
+            <div class="admin-entry">
+                <button id="adminBtn">
+                    <span class="icon">⚙️</span>
+                    <span class="text">管理</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 主要内容区 -->
+        <main class="main-content">
+            <!-- 左侧奖品展示区 -->
+            <section class="prize-section" id="prizeSection">
+                <!-- 将通过prize-list.html加载 -->
+            </section>
+
+            <!-- 中央抽奖区 -->
+            <section class="lottery-section">
+                <!-- 将通过lottery-sphere.html加载 -->
+            </section>
+
+            <!-- 右侧信息区 -->
+            <section class="info-section">
+                <!-- 将通过info-panel.html加载 -->
+            </section>
+        </main>
+
+        <!-- 控制区域 -->
+        <footer class="control-panel">
+            <div class="main-controls">
+                <button id="startBtn" class="primary-btn">开始抽奖</button>
+                <button id="stopBtn" class="primary-btn" disabled>停止抽奖</button>
+                <button id="resetBtn" class="secondary-btn">重新抽奖</button>
+                <button id="viewBtn" class="secondary-btn">切换视角</button>
+            </div>
+            <div class="sub-controls">
+                <button id="pauseBtn">暂停</button>
+                <div class="speed-control">
+                    <button id="speedDown">-</button>
+                    <span>球速</span>
+                    <button id="speedUp">+</button>
+                </div>
+                <button id="resetViewBtn">视角复位</button>
+                <button id="soundBtn">音效</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 脚本引入 -->
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html> 

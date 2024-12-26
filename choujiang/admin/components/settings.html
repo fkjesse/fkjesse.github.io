@@ -1,0 +1,105 @@
+<div class="settings">
+    <div class="settings-section">
+        <h3>抽奖设置</h3>
+        <form id="lotterySettingsForm">
+            <div class="form-group">
+                <label class="form-label">抽奖速度</label>
+                <div class="range-input">
+                    <input type="range" min="1" max="10" value="5" name="lotterySpeed">
+                    <span class="range-value">5</span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">显示设置</label>
+                <div class="checkbox-group">
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="showDepartment" checked>
+                        显示部门
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="showPosition" checked>
+                        显示职位
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="showNumber" checked>
+                        显示工号
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="showAvatar" checked>
+                        显示头像
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">抽奖规则</label>
+                <div class="checkbox-group">
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="allowRepeat">
+                        允许重复中奖
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="deptLimit">
+                        开启部门限制
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="positionLimit">
+                        开启职位限制
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="settings-section">
+        <h3>主题设置</h3>
+        <div class="theme-selector">
+            <div class="theme-option" data-theme="default">
+                <div class="theme-preview default-theme"></div>
+                <span>默认主题</span>
+            </div>
+            <div class="theme-option" data-theme="festive">
+                <div class="theme-preview festive-theme"></div>
+                <span>喜庆主题</span>
+            </div>
+            <div class="theme-option" data-theme="tech">
+                <div class="theme-preview tech-theme"></div>
+                <span>科技主题</span>
+            </div>
+            <div class="theme-option" data-theme="simple">
+                <div class="theme-preview simple-theme"></div>
+                <span>简约主题</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-section">
+        <h3>系统设置</h3>
+        <form id="systemSettingsForm">
+            <div class="form-group">
+                <label class="form-label">背景音乐音量</label>
+                <div class="range-input">
+                    <input type="range" min="0" max="100" value="50" name="bgmVolume">
+                    <span class="range-value">50%</span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">音效音量</label>
+                <div class="range-input">
+                    <input type="range" min="0" max="100" value="80" name="effectVolume">
+                    <span class="range-value">80%</span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">特效强度</label>
+                <div class="range-input">
+                    <input type="range" min="1" max="10" value="7" name="effectIntensity">
+                    <span class="range-value">7</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽奖系统管理后台</title>
+    <link rel="stylesheet" href="/admin/assets/css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- 侧边栏导航 -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>抽奖系统管理</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#prize" class="nav-item active" data-component="prize-manage">
+                    <span class="icon">🎁</span>
+                    奖品管理
+                </a>
+                <a href="#user" class="nav-item" data-component="user-manage">
+                    <span class="icon">👥</span>
+                    人员管理
+                </a>
+                <a href="#settings" class="nav-item" data-component="settings">
+                    <span class="icon">⚙️</span>
+                    系统设置
+                </a>
+            </nav>
+            <div class="user-info">
+                <img src="/admin/assets/images/admin-avatar.png" alt="管理员头像">
+                <span class="admin-name">管理员</span>
+            </div>
+        </aside>
+
+        <!-- 主要内容区 -->
+        <main class="main-content">
+            <!-- 顶部栏 -->
+            <header class="top-bar">
+                <div class="breadcrumb">
+                    <span class="current-page">奖品管理</span>
+                </div>
+                <div class="actions">
+                    <button id="saveBtn" class="primary-btn">保存更改</button>
+                    <button id="previewBtn" class="secondary-btn">预览效果</button>
+                </div>
+            </header>
+
+            <!-- 内容区域 -->
+            <div class="content-area">
+                <!-- 组件将动态加载到这里 -->
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="/admin/assets/js/admin.js"></script>
+</body>
+</html> 

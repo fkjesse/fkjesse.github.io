@@ -1,0 +1,39 @@
+lottery/
+├── frontend/                # 前端代码
+│   ├── index.html          # 主页面
+│   ├── assets/             # 静态资源
+│   │   ├── css/           # 样式文件
+│   │   │   ├── main.css   # 主样式
+│   │   │   ├── lottery.css # 抽奖相关样式
+│   │   │   └── themes.css  # 主题样式
+│   │   ├── js/            # JavaScript文件
+│   │   │   ├── main.js    # 主逻辑
+│   │   │   ├── lottery.js # 抽奖逻辑
+│   │   │   ├── sphere.js  # 3D球体逻辑
+│   │   │   ├── effects.js # 特效逻辑
+│   │   │   └── audio.js   # 音频控制
+│   │   ├── images/        # 图片资源
+│   │   └── sounds/        # 音频资源
+│   └── components/         # HTML组件
+│       ├── prize-list.html # 奖品展示区
+│       ├── lottery-sphere.html # 抽奖球体
+│       └── info-panel.html # 信息面板
+│
+├── admin/                  # 后台管理
+│   ├── admin.html         # 后台主页
+│   ├── assets/            # 后台静态资源
+│   │   ├── css/          # 样式文件
+│   │   └── js/           # JavaScript文件
+│   └── components/        # 后台组件
+│       ├── prize-manage.html  # 奖品管理
+│       ├── user-manage.html   # 人员管理
+│       └── settings.html      # 系统设置
+│
+├── data/                   # 数据文件
+│   ├── prizes.json        # 奖品数据
+│   ├── users.json         # 人员数据
+│   └── config.json        # 配置文件
+│
+└── uploads/               # 上传文件
+    ├── avatars/          # 头像图片
+    └── prizes/           # 奖品图片 

@@ -1,0 +1,80 @@
+<div class="prize-manage">
+    <div class="toolbar">
+        <button class="primary-btn" id="addPrizeBtn">添加奖品</button>
+        <button class="secondary-btn" id="importPrizeBtn">批量导入</button>
+        <div class="search-box">
+            <input type="text" placeholder="搜索奖品...">
+        </div>
+    </div>
+
+    <div class="prize-list">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>奖品名称</th>
+                    <th>描述</th>
+                    <th>数量</th>
+                    <th>剩余</th>
+                    <th>图片</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="prizeTableBody">
+                <!-- 数据将动态插入 -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 添加/编辑奖品弹窗 -->
+    <div class="modal" id="prizeModal">
+        <div class="modal-content">
+            <h3>添加奖品</h3>
+            <form id="prizeForm">
+                <div class="form-group">
+                    <label class="form-label">奖品名称</label>
+                    <input type="text" class="form-input" name="prizeName" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">奖品描述</label>
+                    <input type="text" class="form-input" name="prizeItemName">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">数量</label>
+                    <input type="number" class="form-input" name="prizeCount" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">图片</label>
+                    <input type="file" accept="image/*" name="prizeImage">
+                    <div class="image-preview"></div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">保存</button>
+                    <button type="button" class="secondary-btn" onclick="closeModal()">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 批量导入弹窗 -->
+    <div class="modal" id="importModal">
+        <div class="modal-content">
+            <h3>批量导入奖品</h3>
+            <div class="import-area">
+                <div class="upload-area">
+                    <input type="file" accept=".xlsx,.xls,.csv" id="importFile">
+                    <p>支持 Excel、CSV 格式文件</p>
+                </div>
+                <div class="template-download">
+                    <a href="templates/prize-import-template.xlsx">下载导入模板</a>
+                </div>
+            </div>
+            <div class="import-preview">
+                <!-- 导入预览将显示在这里 -->
+            </div>
+            <div class="modal-actions">
+                <button class="primary-btn" id="confirmImport">确认导入</button>
+                <button class="secondary-btn" onclick="closeModal()">取消</button>
+            </div>
+        </div>
+    </div>
+</div> 
